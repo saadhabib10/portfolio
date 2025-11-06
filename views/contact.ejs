@@ -1,6 +1,25 @@
 <%- include('partials/header') %>
 
-<h1>Contact</h1>
-<p>This is my Contact page.</p>
+<h2 class="mb-4 text-center">Contact Me</h2>
+
+<!-- Contact form -->
+<form action="mailto:your-email@example.com" method="post" class="mx-auto" style="max-width: 500px;">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea class="form-control" id="message" rows="4" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
 
 <%- include('partials/footer') %>

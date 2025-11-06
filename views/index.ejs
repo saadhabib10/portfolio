@@ -1,15 +1,17 @@
 <%- include('partials/header') %>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!-- Centered main homepage section -->
+<div class="text-center">
+  <!-- Profile picture -->
+  <img src="/images/avatar.png" alt="Saad Habib" class="rounded-circle mb-3" width="150">
+
+  <!-- Name and tagline -->
+  <h1 class="display-4">Saad Habib</h1>
+  <p class="lead">IT & Network Security Student</p>
+  <p>Welcome to my personal portfolio!</p>
+
+  <!-- Button linking to projects -->
+  <a href="/projects" class="btn btn-primary btn-lg mt-3">View My Projects</a>
+</div>
 
 <%- include('partials/footer') %>
